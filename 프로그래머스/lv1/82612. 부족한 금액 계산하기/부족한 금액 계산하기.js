@@ -3,9 +3,6 @@ function solution(price, money, count) {
     for(let i = 1; i <= count; i++){
         sumPrice += price * i;
     }
-    if (money - sumPrice > 0) {
-        return 0
-    } else {
-        return (money - sumPrice) * -1
-    }
+
+    return money - sumPrice > 0 ? 0 : (money - sumPrice) * -1
 }
