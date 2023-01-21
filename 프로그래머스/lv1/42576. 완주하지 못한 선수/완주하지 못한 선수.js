@@ -1,7 +1,7 @@
 function solution(participant, completion) {
-    // 1. 인자로 들어오는 배열을 정렬
+    // 1. 인자로 들어오는 배열을 정렬 - sort > mutate
     let p = participant.sort();
-     let c = completion.sort();
+    let c = completion.sort();
 
     // 2. 참가자 (p) 배열 기준으로 순회
   for (let i = 0; i < p.length; i++) {
@@ -10,5 +10,6 @@ function solution(participant, completion) {
       return p[i];
     }
   }
-    return p
+    // return p
+    
 }
